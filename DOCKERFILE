@@ -1,6 +1,6 @@
 FROM ubuntu:latest
-MAINTAINER lwz322 <lwz322@qq.com>
 ARG DEBIAN_FRONTEND=noninteractive
+
 RUN echo "deb http://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse"> /etc/apt/sources.list \
 	&&  echo "deb http://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse">> /etc/apt/sources.list \
 	&& echo "deb http://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse">> /etc/apt/sources.list
